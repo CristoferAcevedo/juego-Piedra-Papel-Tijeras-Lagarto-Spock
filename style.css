@@ -1,0 +1,128 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #3a8ba7;
+    justify-content: space-between;
+    box-shadow: 10px 5px 5px  rgba(206, 202, 202, 0.3);
+}
+
+h1{
+    margin-top: 10px;
+    font-size: 36px;
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+
+#resultado{
+    text-align: center;
+}
+#resultado img{
+    width: 9%;
+    border-radius: 85px;
+    border: 3px solid #ffffff;
+}
+
+#textoInicio{
+    font-size: 26px;
+    padding: 20px;
+    color: black;
+}
+
+#grupoBotons{
+    display: flex;
+    width: 200px;
+    margin: 0 280px;
+    gap: 15px;
+}
+
+.button{
+    margin: 14px;
+    padding: 0;
+    border: 3px solid #ffffff;
+    background: none;
+    transition: transform 0.2s ease;
+    border-radius: 85px;
+}
+
+.button.opaco { 
+    opacity: 0.5; 
+    pointer-events: none;
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#grupoBotons > button >img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    object-fit: cover;
+    border-radius: 85px;
+}
+
+.botonesEnd{
+    display: flex;
+    margin: 0 500px;
+    background-color: #3a8ba7;
+    gap: 48px;
+}
+.buttonEnd2{
+    margin: 14px 25px;
+    padding: 0;
+    border: none;
+    background: none;
+    transition: transform 0.2s ease;
+}
+.buttonEnd2 >img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    object-fit: cover;
+}
+.buttonEnd2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#texto-juego { 
+    word-spacing: 35px;
+    text-align: center;
+    font-size: 16px;
+    padding: 7px;
+    color: black;
+}
+
+#texto-end { 
+    word-spacing: 65px;
+    text-align: center;
+    font-size: 16px;
+    padding: 7px;
+    color: black;
+}
+
+.contador { 
+    width: 150px;
+    word-spacing: 2px;
+    color: #000000;
+    justify-content: center; 
+    text-align: center; 
+    display: inline-block; 
+    border: 2px black solid; 
+    border-radius: 10px; 
+    margin: 0 auto;
+    box-shadow: 10px 5px 5px  rgb(0, 0, 0);
+    background: linear-gradient(95deg, #4cb6da, #0195ff)
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+

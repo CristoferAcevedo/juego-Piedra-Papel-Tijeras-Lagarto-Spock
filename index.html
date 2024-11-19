@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styleP.css">
+        <title>JUEGO</title>
+    </head>
+    <body>
+        <div id="formInicioSesion" class="wrapper">
+            <form action="" id="formInicio" class="form">
+                <h1 class="titulo">Inicio</h1>
+                <p id="para" class="para"></p>
+                <div class="inp">
+                    <input type="email" id="correo" class="input" placeholder="Correo" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="inp">
+                    <input type="password" id="password" class="input" placeholder="Contraseña" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <button id="Inicioo" class="submit" >Iniciar Sesion</button>
+                <p class="footerRegistro">¿no tienes cuenta?<a href="#" id="mostrarRegistro" class="link">Por favor registrate</a></p>
+            </form>
+            <div></div>
+            <div class="banner">
+                <h1 class="wel_text">BIENVENIDO</h1>
+            </div>
+        </div>
+        <div id="formRegistro" class="wrapper" style="display: none;">
+            <form id="formRegistro2" class="form">
+                <h1 class="titulo">Registro</h1>
+                <div class="inp">
+                    <input type="text" id="nombreR" class="input" placeholder="Nombre" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="inp">
+                    <input type="email" id="correoR" class="input" placeholder="correo" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="inp">
+                    <input type="password" id="passwordR" class="input" placeholder="Contraseña" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <button id="Registroo" class="submit" >Registrarse</button>
+                <button class="submit"  id="mostrarInicioSesion" >volver</button>
+            </form>
+
+            <div></div>
+            <div class="banner">
+                <h1 class="wel_text">REGISTRO</h1>
+                <p id="paraR" class="para"></p>
+            </div>
+        </div>
+
+        <div id="juego" class="container" style="display: none;">
+            <h1>
+                Piedra, Papel, Tijeras, Lagarto, Spock.
+            </h1>
+            <div id="resultado">
+                <img id="imgCompu" src="imagenes/piedra_LE_auto_x4.jpg">
+                <div id="textoInicio">
+                    Pulse una opcion para iniciar
+                </div>
+                <img id="imgUsuario" src="imagenes/piedra_LE_auto_x4.jpg">
+            </div>
+            <div id="grupoBotons">
+                <button class="button"  id="piedra" type="button">
+                    <img src="imagenes/piedra_LE_auto_x4.jpg">
+                </button>
+                <button class="button" id="papel">
+                    <img src="imagenes/papel_LE_auto_x4.jpg">
+                </button>
+                <button class="button" id="tijera">
+                    <img src="imagenes/tijera_LE_auto_x4.jpg">
+                </button id="">
+                <button class="button" id="lagarto">
+                    <img src="imagenes/lagarto_LE_auto_x4.jpg">
+                </button>
+                <button class="button" id="spock">
+                    <img src="imagenes/spock_LE_auto_x4.jpg">
+                </button>
+            </div>
+            <p id="texto-juego">PIEDRA - PAPEL - TIJERAS - LAGARTO - SPOCK</p>
+            <div class="contador">
+                <p id="nombreU">Jugador: </p>
+                <p id="ganados">Victorias: 0</p>
+                <p id="perdidas">Derrotas: 0</p>
+            </div>
+            <br>
+            <div class="botonesEnd">
+                <button id="juegoNuevo" class="buttonEnd2">
+                    <img src="imagenes/actualizar-flecha.png" alt="">
+                </button>
+                <button id="salir" class="buttonEnd2">
+                    <img src="imagenes/cerrar-sesion.png" alt="">
+                </button>
+            </div>
+            <p id="texto-end">Nuevo - Salir</p>
+            <footer>© Cristofer Acevedo</footer>
+        </div>
+    </body>
+    <script type="module" src="usuarios.js"></script>
+    <script type="module" src="juego.js"></script>
+</html>
