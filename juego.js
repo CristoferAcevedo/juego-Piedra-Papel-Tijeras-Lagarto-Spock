@@ -58,6 +58,12 @@ class Juego{
         document.getElementById("juegoNuevo").addEventListener("click",()=>{
             Juego.contar=0;
             Juego.acumulador=0;
+            const imagenUsuario=document.getElementById("imgUsuario");
+            const imagenCompu=document.getElementById("imgCompu");
+            imagenUsuario.src="imagenes/piedra_LE_auto_x4.jpg";
+            imagenCompu.src="imagenes/piedra_LE_auto_x4.jpg";
+            const text=document.getElementById("textoInicio");
+            text.innerText="Pulse una opcion para iniciar";
             Juego.Actualizar()
             Juego.actualizar()
         })
