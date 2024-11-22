@@ -23,6 +23,10 @@ class Usuario{
                 const datos=[nombre,correo,password];
                 this.listCLientes.push(datos);
                 texto.innerText = "Usuario registrado con exito.";
+                texto.classList.remove('fade-out');
+                setTimeout(()=>{
+                    texto.classList.add('fade-out')
+                },2000);
                 setTimeout(()=>{
                     document.getElementById('formRegistro').style.display = 'none';
                     document.getElementById('formInicioSesion').style.display = 'grid';
